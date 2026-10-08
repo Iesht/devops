@@ -1,0 +1,17 @@
+IMAGE          CREATED          CREATED BY                                      SIZE      COMMENT
+40fbf3cd4a56   13 seconds ago   CMD ["gunicorn" "--bind" "0.0.0.0:8000" "mai…   0B        buildkit.dockerfile.v0
+<missing>      13 seconds ago   EXPOSE [8000/tcp]                               0B        buildkit.dockerfile.v0
+<missing>      13 seconds ago   USER 10001:10001                                0B        buildkit.dockerfile.v0
+<missing>      13 seconds ago   COPY --chown=10001:10001 main.py ./ # buildk…   16.4kB    buildkit.dockerfile.v0
+<missing>      13 seconds ago   RUN /bin/sh -c pip install --no-cache-dir --…   27.8MB    buildkit.dockerfile.v0
+<missing>      20 seconds ago   COPY requirements.txt ./ # buildkit             12.3kB    buildkit.dockerfile.v0
+<missing>      2 hours ago      WORKDIR /app                                    8.19kB    buildkit.dockerfile.v0
+<missing>      2 hours ago      ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFER…   0B        buildkit.dockerfile.v0
+<missing>      2 days ago       CMD ["python3"]                                 0B        buildkit.dockerfile.v0
+<missing>      2 days ago       RUN /bin/sh -c set -eux;  for src in idle3 p…   16.4kB    buildkit.dockerfile.v0
+<missing>      2 days ago       RUN /bin/sh -c set -eux;   savedAptMark="$(a…   42MB      buildkit.dockerfile.v0
+<missing>      2 days ago       ENV PYTHON_SHA256=c2215904f02b175596dc493515…   0B        buildkit.dockerfile.v0
+<missing>      2 days ago       ENV PYTHON_VERSION=3.14.8                       0B        buildkit.dockerfile.v0
+<missing>      2 days ago       RUN /bin/sh -c set -eux;  apt-get update;  a…   4.94MB    buildkit.dockerfile.v0
+<missing>      2 days ago       ENV PATH=/usr/local/bin:/usr/local/sbin:/usr…   0B        buildkit.dockerfile.v0
+<missing>      3 days ago       # debian.sh --arch 'amd64' out/ 'trixie' '@1…   87.7MB    debuerreotype 0.17

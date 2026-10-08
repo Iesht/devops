@@ -1,0 +1,9 @@
+NAME                IMAGE               COMMAND                  SERVICE   CREATED          STATUS                    PORTS
+homework2-app-1     homework2-app       "gunicorn --bind 0.0…"   app       10 minutes ago   Up 10 minutes             8000/tcp
+homework2-db-1      postgres:18         "docker-entrypoint.s…"   db        35 minutes ago   Up 33 minutes (healthy)   5432/tcp
+homework2-nginx-1   nginx:1.30-alpine   "/docker-entrypoint.…"   nginx     33 minutes ago   Up 33 minutes             0.0.0.0:80->80/tcp, [::]:80->80/tcp
+homework2-redis-1   redis:8.8-alpine    "docker-entrypoint.s…"   redis     33 minutes ago   Up 33 minutes (healthy)   6379/tcp
+
+{"checks":{"postgres":{"status":"ok"},"redis":{"status":"ok"}},"status":"ok"}
+
+uid=10001 gid=10001 groups=10001

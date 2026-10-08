@@ -1,0 +1,83 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 345B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.14-slim
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 70B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 65B done
+#4 DONE 0.0s
+
+#5 [1/5] FROM docker.io/library/python:3.14-slim@sha256:f85c5697265c178cc6887276c55fe16cf3d14ca35c3df6a5eab3b360534a55d2
+#5 resolve docker.io/library/python:3.14-slim@sha256:f85c5697265c178cc6887276c55fe16cf3d14ca35c3df6a5eab3b360534a55d2 0.0s done
+#5 DONE 0.0s
+
+#6 [2/5] WORKDIR /app
+#6 CACHED
+
+#7 [3/5] COPY requirements.txt ./
+#7 DONE 0.0s
+
+#8 [4/5] RUN pip install --no-cache-dir --no-compile -r requirements.txt
+#8 2.443 Collecting blinker==1.9.0 (from -r requirements.txt (line 1))
+#8 3.252   Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+#8 3.366 Collecting click==8.5.0 (from -r requirements.txt (line 2))
+#8 3.456   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+#8 3.665 Collecting Flask==3.1.3 (from -r requirements.txt (line 3))
+#8 3.777   Downloading flask-3.1.3-py3-none-any.whl.metadata (3.2 kB)
+#8 3.873 Collecting gunicorn==26.2.0 (from -r requirements.txt (line 4))
+#8 3.956   Downloading gunicorn-26.2.0-py3-none-any.whl.metadata (5.5 kB)
+#8 4.045 Collecting itsdangerous==2.2.0 (from -r requirements.txt (line 5))
+#8 4.127   Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+#8 4.236 Collecting Jinja2==3.1.6 (from -r requirements.txt (line 6))
+#8 4.319   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+#8 4.445 Collecting MarkupSafe==3.0.3 (from -r requirements.txt (line 7))
+#8 4.527   Downloading markupsafe-3.0.3-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+#8 4.644 Collecting psycopg==3.3.6 (from psycopg[binary]==3.3.6->-r requirements.txt (line 8))
+#8 4.727   Downloading psycopg-3.3.6-py3-none-any.whl.metadata (4.4 kB)
+#8 4.838 Collecting redis==8.1.0 (from -r requirements.txt (line 9))
+#8 4.923   Downloading redis-8.1.0-py3-none-any.whl.metadata (16 kB)
+#8 5.040 Collecting Werkzeug==3.1.8 (from -r requirements.txt (line 10))
+#8 5.124   Downloading werkzeug-3.1.8-py3-none-any.whl.metadata (4.0 kB)
+#8 5.336 Collecting psycopg-binary==3.3.6 (from psycopg[binary]==3.3.6->-r requirements.txt (line 8))
+#8 5.421   Downloading psycopg_binary-3.3.6-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.7 kB)
+#8 5.508 Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+#8 5.591 Downloading click-8.5.0-py3-none-any.whl (125 kB)
+#8 5.697 Downloading flask-3.1.3-py3-none-any.whl (103 kB)
+#8 5.789 Downloading gunicorn-26.2.0-py3-none-any.whl (228 kB)
+#8 5.939 Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+#8 6.029 Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+#8 6.122 Downloading markupsafe-3.0.3-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (23 kB)
+#8 6.214 Downloading psycopg-3.3.6-py3-none-any.whl (215 kB)
+#8 6.311 Downloading redis-8.1.0-py3-none-any.whl (560 kB)
+#8 6.354    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 560.6/560.6 kB 17.6 MB/s  0:00:00
+#8 6.442 Downloading werkzeug-3.1.8-py3-none-any.whl (226 kB)
+#8 6.545 Downloading psycopg_binary-3.3.6-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.2 MB)
+#8 7.020    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.2/5.2 MB 11.0 MB/s  0:00:00
+#8 7.116 Installing collected packages: redis, psycopg-binary, psycopg, MarkupSafe, itsdangerous, gunicorn, click, blinker, Werkzeug, Jinja2, Flask
+#8 7.315 
+#8 7.316 Successfully installed Flask-3.1.3 Jinja2-3.1.6 MarkupSafe-3.0.3 Werkzeug-3.1.8 blinker-1.9.0 click-8.5.0 gunicorn-26.2.0 itsdangerous-2.2.0 psycopg-3.3.6 psycopg-binary-3.3.6 redis-8.1.0
+#8 7.316 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#8 DONE 7.4s
+
+#9 [5/5] COPY --chown=10001:10001 main.py ./
+#9 DONE 0.0s
+
+#10 exporting to image
+#10 exporting layers
+#10 exporting layers 0.7s done
+#10 exporting manifest sha256:94677c57af0f9923fa1ffa403eee7caa23b5758b42cf3a0a89eb2943c110f0f2 0.0s done
+#10 exporting config sha256:9e53c3bff41b31c30b7bbc489054fa7cd3491ec0f9f5ac43f5cf34d0b9d8d38b done
+#10 exporting attestation manifest sha256:b986322b616292350d422a3a0af9329242b509e3391299a854d53f13340bfa50 0.0s done
+#10 exporting manifest list sha256:40fbf3cd4a56ef5b49ad7ec64ce095e9a324e2614f2d987f652e8bb01e8d0fa1 0.0s done
+#10 naming to docker.io/library/homework2-app:after done
+#10 unpacking to docker.io/library/homework2-app:after
+#10 unpacking to docker.io/library/homework2-app:after 0.3s done
+#10 DONE 1.0s
