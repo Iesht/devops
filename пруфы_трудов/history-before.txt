@@ -1,0 +1,15 @@
+IMAGE          CREATED          CREATED BY                                      SIZE      COMMENT
+1a1b97736399   29 seconds ago   CMD ["gunicorn" "--bind" "0.0.0.0:8000" "mai…   0B        buildkit.dockerfile.v0
+<missing>      29 seconds ago   EXPOSE [8000/tcp]                               0B        buildkit.dockerfile.v0
+<missing>      29 seconds ago   COPY . . # buildkit                             86kB      buildkit.dockerfile.v0
+<missing>      29 seconds ago   RUN /bin/sh -c pip install --no-cache-dir   …   48.4MB    buildkit.dockerfile.v0
+<missing>      38 seconds ago   COPY requirements.txt . # buildkit              12.3kB    buildkit.dockerfile.v0
+<missing>      59 minutes ago   WORKDIR /app                                    8.19kB    buildkit.dockerfile.v0
+<missing>      2 days ago       CMD ["python3"]                                 0B        buildkit.dockerfile.v0
+<missing>      2 days ago       RUN /bin/sh -c set -eux;  for src in idle3 p…   16.4kB    buildkit.dockerfile.v0
+<missing>      2 days ago       RUN /bin/sh -c set -eux;   savedAptMark="$(a…   42MB      buildkit.dockerfile.v0
+<missing>      2 days ago       ENV PYTHON_SHA256=c2215904f02b175596dc493515…   0B        buildkit.dockerfile.v0
+<missing>      2 days ago       ENV PYTHON_VERSION=3.14.8                       0B        buildkit.dockerfile.v0
+<missing>      2 days ago       RUN /bin/sh -c set -eux;  apt-get update;  a…   4.94MB    buildkit.dockerfile.v0
+<missing>      2 days ago       ENV PATH=/usr/local/bin:/usr/local/sbin:/usr…   0B        buildkit.dockerfile.v0
+<missing>      3 days ago       # debian.sh --arch 'amd64' out/ 'trixie' '@1…   87.7MB    debuerreotype 0.17

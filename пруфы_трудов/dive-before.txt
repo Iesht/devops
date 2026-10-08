@@ -1,0 +1,34 @@
+  Using CI config: .dive-ci
+[1mImage Source: [0mdocker://homework2-app:before
+[1mExtracting image from docker-engine...[0m (this can take a while for large images)
+[1mAnalyzing image...[0m
+  efficiency: 97.6078 %
+  wastedBytes: 5651651 bytes (5.7 MB)
+  userWastedPercent: 6.6400 %
+[1mInefficient Files:[0m
+Count  Wasted Space  File Path
+    3        2.4 MB  /var/cache/debconf/templates.dat-old
+    3        2.4 MB  /var/cache/debconf/templates.dat
+    3        220 kB  /var/lib/dpkg/status
+    3        220 kB  /var/lib/dpkg/status-old
+    2        130 kB  /var/log/dpkg.log
+    2         83 kB  /var/lib/dpkg/info/perl-base.list
+    2         50 kB  /var/log/apt/term.log
+    3         38 kB  /var/cache/debconf/config.dat
+    3         38 kB  /var/cache/debconf/config.dat-old
+    3         19 kB  /var/log/apt/eipp.log.xz
+    3         13 kB  /var/lib/apt/extended_states
+    2         12 kB  /var/log/apt/history.log
+    2        8.8 kB  /etc/ld.so.cache
+    2         836 B  /var/lib/dpkg/diversions
+    2         648 B  /var/lib/dpkg/diversions-old
+    2         288 B  /var/lib/dpkg/triggers/File
+    3           0 B  /var/lib/dpkg/triggers/Lock
+    2           0 B  /var/lib/dpkg/triggers/Unincorp
+    3           0 B  /var/lib/dpkg/lock
+[1mResults:[0m
+  PASS: highestUserWastedPercent
+  PASS: highestWastedBytes
+  PASS: lowestEfficiency
+[32mResult:PASS [Total:3] [Passed:3] [Failed:0] [Warn:0] [Skipped:0][0m
+
