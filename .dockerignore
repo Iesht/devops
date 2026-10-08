@@ -1,5 +1,3 @@
-.git
-.venv
-.env
-__pycache__
-пруфы_трудов
+**
+!main.py
+!requirements.txt
